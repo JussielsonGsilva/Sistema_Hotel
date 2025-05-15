@@ -44,23 +44,36 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Hotel.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 400, 290));
 
+        jLabel_login.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel_login.setText("Login:");
-        getContentPane().add(jLabel_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 50, 30));
-        getContentPane().add(jTextField_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 310, 40));
+        getContentPane().add(jLabel_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, 50, 30));
+        getContentPane().add(jTextField_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, 310, 40));
 
+        jLabel_senha.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel_senha.setText("Senha:");
-        getContentPane().add(jLabel_senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 390, 50, 20));
-        getContentPane().add(jPasswordField_senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 380, 310, 40));
+        getContentPane().add(jLabel_senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 60, 20));
+        getContentPane().add(jPasswordField_senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 390, 310, 40));
 
-        jButton_entrar.setText("Entrar");
+        jButton_entrar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_entrar.setText("ENTRAR");
         getContentPane().add(jButton_entrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 450, 170, 40));
 
-        jButton_sair.setText("Sair");
+        jButton_sair.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton_sair.setText("SAIR");
+        jButton_sair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_sairActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton_sair, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 450, 160, 40));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_sairActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_sairActionPerformed
 
     /**
      * @param args the command line arguments
